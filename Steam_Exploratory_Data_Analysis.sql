@@ -41,6 +41,27 @@ LEFT JOIN Most_Played_Game_per_User	AS mostplayed
 	ON mostplayed.userid = purch.userid
 GROUP BY purch.userid;
 
+
 --Display final table
 SELECT *
 FROM steam_user_aggregate_data_viasql;
+
+
+--Replicates the table created by the Python Script with limitations of SQLite
+CREATE VIEW steam_game_aggregate_data_viasql AS
+
+SELECT purch.gametitle,
+		count(purch.value) AS buyer_count,
+		count(played.value) AS player_count,
+		sum(played.value) AS accumulated_hours_played,
+		count(purch.value)/ count(played.value) AS player_frac_of_buyer,
+		avg(played.value) AS avg_hours_played
+FROM Purchased_Steam_Data AS purch
+	LEFT JOIN Played_Steam_Data AS played
+	ON purch.gametitle = played.gametitle
+GROUP BY purch.gametitle;
+
+
+--Display final TABLE
+SELECT *
+FROM steam_game_aggregate_data_viasql;
