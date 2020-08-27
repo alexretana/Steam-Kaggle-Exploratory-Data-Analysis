@@ -19,13 +19,13 @@ The final Machine Learning solution leveraged the modeling techniques used in no
 
 # Notebooks
 
-1.Steam-Exploratory-Data-Analysis-Reformat
-2.Steam-Exploratory-Data-Analysis-Visualization
-3.Steam-Exploratory-Data-Analysis-Collaborative-Filtering
-4.Steam-Exploratory-Data-Analysis-Add-Data-From-Web-API
-5.Collaborative-Filtering-with-Deep-Learning
-6.Visualizing-Encoder-Using-PCA-and-Clustering
+- 1.Steam-Exploratory-Data-Analysis-Reformat
+- 2.Steam-Exploratory-Data-Analysis-Visualization
+- 3.Steam-Exploratory-Data-Analysis-Collaborative-Filtering
+- 4.Steam-Exploratory-Data-Analysis-Add-Data-From-Web-API
+- 5.Collaborative-Filtering-with-Deep-Learning
+- 6.Visualizing-Encoder-Using-PCA-and-Clustering
 
 # Conclusion
 
-Using this Steam dataset found on kaggle as well as some other additional APIs, Aggregate metrics were investigated and used to tell story. Following the data exploration, various prediction methods were used to create prototype recommendation system. Models can be evaultuated using train-test split, however, different models still derive different value and it is not a bad idea to utilize more than one recommendation system.s
+Using this Steam dataset found on kaggle as well as some other additional APIs, Aggregate metrics were investigated and used to tell story. Following the data exploration, various prediction methods were used to create prototype recommendation system. Models can be evaultuated using train-test split, however, different models still derive different value and it is not a bad idea to utilize more than one recommendation system.
